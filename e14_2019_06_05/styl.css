@@ -1,0 +1,64 @@
+.pesel {
+    font-weight: bold;
+}
+
+body {
+    background-color: #EEEEEE;
+}
+
+.kontener {
+    width: 1000px;
+    margin: auto;
+    text-align: center;
+}
+
+.logo, .menu, .stopka {
+    background-color: #c0c0c0;
+    height: 100px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    float: left;
+}
+
+.logo {
+    width: 400px;
+    float: left;
+}
+
+.menu {
+    width: 600px;
+    float: left;
+}
+
+.baner {
+    background-color: #DDDDDD;
+    height: 200px;
+    float: left;
+}
+
+.glowny {
+    margin: 50px;
+    float: left;
+    width: 100%;
+}
+
+.stopka {
+    width: 100%;
+    text-align: right;
+    clear: both;
+}
+
+.menu a {
+    color: #555555;
+    margin: 50px;
+    font-size: 200%;
+    text-decoration-line: none;
+}
+
+.regulaminbrak {
+    color: red;
+}
+
+.regulamin1 {
+    text-transform: uppercase;
+}
