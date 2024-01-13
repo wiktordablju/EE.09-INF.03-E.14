@@ -1,0 +1,11 @@
+Zapytanie 1: wybierajace jedynie pola miesiac i rok z tabeli zadania dla zadania z data 2020-07-01
+SELECT miesiac, rok FROM zadania WHERE dataZadania = '2020-07-01';
+
+Zapytanie 2: wybierajace jedynie pola dataZadania i wpis z tabeli zadania dla zadan, ktorych miesiac to lipiec
+SELECT dataZadania, wpis FROM zadania WHERE miesiac = 'lipiec';
+
+Zapytanie 3: wybiierajace jedynie pole miesiac i wysiwetlajace je bez powtorzen, z tabeli zadania dla miesiiecy zaczynajacych sie na litere l
+SELECT DISTINCT miesiac FROM zadania WHERE miesiac LIKE 'l%';
+
+Zapytanie 4: zmieniajace pole wpis w tabeli zadania dla zadania z data 2020-07-13 nowy wpis to Wycieczka: jezioro
+UPDATE zadania SET wpis = 'Wycieczka: jezioro' WHERE dataZadania = '2020-07-13';
