@@ -1,0 +1,15 @@
+Zapytanie 1: wybierające jedynie pola marka i rocznik z tabeli samochody dla samochodów koloru niebieskiego
+SELECT marka, rocznik FROM samochody WHERE kolor = 'niebieski';
+
+Zapytanie 2: zliczające ile jest samochodów marki Toyota lub Opel, których stan jest bardzo dobry
+SELECT COUNT(*) FROM samochody WHERE (marka = 'Toyota' OR marka = 'Opel') AND stan = 'bardzo dobry';
+
+Zapytanie 3: aktualizujące wartość pola stan na „dobry” w tabeli samochody dla samochodów starszych niż 2004 rok
+UPDATE samochody SET stan = 'dobry' WHERE rocznik < 2004;
+
+Zapytanie 4: tworzące użytkownika jan na localhost z hasłem janKowalski1@
+CREATE USER jan@localhost IDENTIFIED BY 'janKowalski11@';
+
+
+Zapytanie 5: nadające użytkownikowi jan prawo jedynie do wybierania, wstawiania i aktualizacji danych w tabeli samochody
+GRANT SELECT, INSERT, UPDATE ON samochody TO jan@localhost;
