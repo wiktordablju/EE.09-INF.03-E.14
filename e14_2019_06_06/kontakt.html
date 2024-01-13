@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pogotowie komputerowe</title>
+    <link rel="stylesheet" href="./styl.css">
+    <link rel="shortcut icon" href="./favicon.png" type="image/x-icon">
+</head>
+<body>
+    <div class="kontener">
+        <div class="baner">
+            <img src="./animacja.gif">
+        </div>
+        <div class="menu">
+            <a href="./index.html">O nas</a>
+            <a href="./kontakt.html">Kontakt</a>
+        </div>
+        <div class="glowny1"></div>
+        <div class="glowny2">
+            <h3>Formularz kontaktowy</h3>
+            <table>
+                <form>
+                    <tr>
+                        <td><label for="">Imię: </label></td>
+                        <td><input type="text" class="imie"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="">Nazwisko: </label></td>
+                        <td><input type="text" class="nazwisko"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="">E-mail: </label></td>
+                        <td><input type="email" class="email"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="">Usługa: </label></td>
+                        <td><select class="usluga">
+                            <option value="naprawa komputera">naprawa komputera</option>
+                            <option value="odzyskiwanie danych">odzyskiwanie danych</option>
+                            <option value="problemy z oprogramowaniem">problemy z oprogramowaniem</option>
+                            <option value="konfiguracja sieci LAN">konfiguracja sieci LAN</option>
+                            <option value="inne">inne</option>
+                        </select></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td><input type="checkbox" checked><label for="">Wyślij kopię wiadomości</label></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td><input type="reset" value="Resetuj" class="resetuj"><button class="przeslij" type="button">Prześlij</button></td>
+                    </tr>
+                </form>
+            </table>
+            <p class="wynik"></p>
+        </div>
+        <div class="glowny3"></div>
+        <div class="stopka">
+            <p>Autor strony: <span class="pesel">wiktordablju</span></p>
+        </div>
+    </div>
+    <script src="./skrypt.js"></script>
+</body>
+</html>

@@ -1,0 +1,73 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.pesel {
+    font-weight: bold;
+    text-transform: none;
+}
+
+body {
+    background-color: #99ffcc;
+}
+
+.kontener {
+    width: 1000px;
+    margin: auto;
+}
+
+.baner {
+    background-color: #99ff66;
+    height: 200px;
+    float: left;
+}
+
+.menu {
+    background-color: #66ccff;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    float: left;
+    width: 100%;
+}
+
+.glowny1, .glowny2, .glowny3 {
+    width: 310px;
+    padding: 10px;
+    float: left;
+}
+
+.stopka {
+    background-color: #66ccff;
+    color: #006666;
+    text-align: right;
+    height: 30px;
+    padding: 20px;
+    float: left;
+    width: 100%;
+}
+
+.menu a {
+    color: #006666;
+    margin: 50px;
+    font-size: 200%;
+    text-decoration-line: none;
+}
+
+h2, h3 {
+    text-align: center;
+}
+
+.resetuj {
+    background-color: #ff0000;
+}
+
+.przeslij {
+    background-color: #00ff00;
+}
+
+span {
+    text-transform: lowercase;
+}
