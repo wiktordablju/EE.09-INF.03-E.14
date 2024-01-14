@@ -1,0 +1,11 @@
+Zapytanie 1: wybierające pola kierunek i czas z tabeli przyloty dla lotów, które nie mają wpisu w polu status_lotu
+SELECT kierunek, czas FROM przyloty WHERE status_lotu = '';
+
+Zapytanie 2: wybierające pola kierunek i dzien z tabeli odloty dla lotów obsługiwanych samolotem typu Boening 787. Zapytanie wykorzystuje relację, w klauzuli warunku jest sprawdzany typ samolotu
+SELECT kierunek, dzien FROM odloty INNER JOIN samoloty ON samoloty.id = odloty.samoloty_id WHERE typ = 'Boening 787';
+
+Zapytanie 3: wybierające numer rejsu i kierunek z tabeli przyloty dla rejsów, których numer zawiera w dowolnym miejscu ciąg znaków LX
+SELECT nr_rejsu, kierunek FROM przyloty WHERE nr_rejsu LIKE '%LX%';
+
+Zapytanie 4: uaktualniające pole linie w tabeli samoloty. Firma SWISS zmieniła swoją nazwę na SWISS2
+UPDATE samoloty SET linie = 'SWISS2' WHERE linie = 'SWISS';
