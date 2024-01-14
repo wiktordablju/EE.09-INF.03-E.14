@@ -1,0 +1,15 @@
+Zapytanie 1: wybierające jedynie pola nazwa i cena dla czterech pierwszych rekordów w tabeli
+towary
+SELECT nazwa, cena FROM towary LIMIT 4;
+
+Zapytanie 2: wybierające jedynie pole cena dla produktu cyrkiel z tabeli towary
+SELECT cena FROM towary WHERE nazwa = 'Cyrkiel';
+
+Zapytanie 3: wybierające jedynie pole nazwa dla wszystkich rekordów w tabeli towary
+SELECT nazwa FROM towary;
+
+
+Zapytanie 4: wybierające jedynie pole promocja dla wszystkich rekordów z tabeli towary oraz
+zliczające ilość towarów objętych i towarów nieobjętych promocją. Pole zliczające należy nazwać
+ilosc.
+SELECT promocja, COUNT(*) AS ilosc FROM towary GROUP BY promocja;
